@@ -6,7 +6,7 @@ use fabianosfbr\CursoPooPhp\PessoaFisica;
 use fabianosfbr\CursoPooPhp\PessoaJurica;
 
 
-$pessoaFisica = new PessoaFisica(
+$pf = new PessoaFisica(
     name: "Fabiano",
     email: "w5Xwz@example.com",
     phone: "123.456.789-10",
@@ -25,7 +25,7 @@ $pj = new PessoaJurica(
 
 dump($pj->getName());
 dump($pj->getEmail());
-dump($pj->getEmail());
+dump($pj->getPhone());
 
 
-dump($pessoaFisica);
+dump($pf);
