@@ -14,7 +14,7 @@ abstract class Pessoa
     protected string $phone;
 
 
-    public function showName(): string
+    public function getName(): string
     {
         return $this->name;
     }
