@@ -18,4 +18,11 @@ abstract class Pessoa
     {
         return $this->name;
     }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+
 }
