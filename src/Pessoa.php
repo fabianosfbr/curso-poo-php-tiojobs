@@ -24,5 +24,12 @@ abstract class Pessoa
         return $this->email;
     }
 
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+
+
 
 }
