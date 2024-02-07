@@ -23,9 +23,18 @@ $pj = new PessoaJurica(
 );
 
 
-dump($pj->getName());
-dump($pj->getEmail());
-dump($pj->getPhone());
+//dump($pj);
+//dump($pj);
+//dump($pj);
+//dump($pj);
 
+//dump($pf);
 
-dump($pf);
+if($pf instanceof PessoaFisica) {
+    dump("Sim, sou pessoa física");
+}
+
+if($pj instanceof PessoaJurica) {
+    dump("Sim, sou pessoa jurídica");
+}
+
