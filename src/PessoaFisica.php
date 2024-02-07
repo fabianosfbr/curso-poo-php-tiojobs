@@ -8,7 +8,7 @@ class PessoaFisica extends  Pessoa
 {
 
     private int $age;
-    private string $cpf;
+    protected string $cpf;
 
     public function __construct(
         string $name,

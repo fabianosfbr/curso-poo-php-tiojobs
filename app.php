@@ -2,11 +2,20 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
+use fabianosfbr\CursoPooPhp\PessoaEstrangeira;
 use fabianosfbr\CursoPooPhp\PessoaFisica;
 use fabianosfbr\CursoPooPhp\PessoaJurica;
 
 
 $pf = new PessoaFisica(
+    name: "Fabiano",
+    email: "w5Xwz@example.com",
+    phone: "123.456.789-10",
+    age: 30,
+    cpf: "111.111.111-11"
+);
+
+$pe = new PessoaEstrangeira(
     name: "Fabiano",
     email: "w5Xwz@example.com",
     phone: "123.456.789-10",
@@ -40,3 +49,6 @@ $pj = new PessoaJurica(
 
 dump($pf->getDocument());
 dump($pj->getDocument());
+
+$pe->setDocument('222.222.222-22');
+dump($pe->getDocument());
