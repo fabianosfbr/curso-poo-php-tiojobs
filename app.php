@@ -32,23 +32,8 @@ $pj = new PessoaJurica(
 );
 
 
-//dump($pj);
-//dump($pj);
-//dump($pj);
-//dump($pj);
-
-//dump($pf);
-
-//if($pf instanceof PessoaFisica) {
-//    dump("Sim, sou pessoa física");
-//}
-//
-//if($pj instanceof PessoaJurica) {
-//    dump("Sim, sou pessoa jurídica");
-//}
+dump($pf);
+dump($pj);
 
 dump($pf->getDocument());
 dump($pj->getDocument());
-
-$pe->setDocument('222.222.222-22');
-dump($pe->getDocument());

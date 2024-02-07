@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace fabianosfbr\CursoPooPhp;
 
-class PessoaJurica extends  Pessoa
+use fabianosfbr\CursoPooPhp\Contracts\PessoaJuricaInterface;
+
+class PessoaJurica extends  Pessoa implements PessoaJuricaInterface
 {
     private string $cnpj;
 

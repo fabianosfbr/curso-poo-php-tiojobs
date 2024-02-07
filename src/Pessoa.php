@@ -13,8 +13,6 @@ abstract class Pessoa
 
     protected string $phone;
 
-    abstract function getDocument(): string;
-
 
     public function getName(): string
     {
@@ -30,8 +28,4 @@ abstract class Pessoa
     {
         return $this->phone;
     }
-
-
-
-
 }

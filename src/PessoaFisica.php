@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace fabianosfbr\CursoPooPhp;
 
-class PessoaFisica extends  Pessoa
+use fabianosfbr\CursoPooPhp\Contracts\PessoaFisicaInterface;
+
+class PessoaFisica extends  Pessoa implements PessoaFisicaInterface
 {
 
     private int $age;
@@ -16,8 +18,7 @@ class PessoaFisica extends  Pessoa
         string $phone,
         int $age,
         string $cpf
-    )
-    {
+    ) {
         $this->name = $name;
         $this->email = $email;
         $this->phone = $phone;
@@ -25,12 +26,13 @@ class PessoaFisica extends  Pessoa
         $this->cpf = $cpf;
     }
 
-    public function getDocument():string
+    public function getAge(): int
+    {
+        return $this->age;
+    }
+
+    public function getDocument(): string
     {
         return $this->cpf;
     }
-
-
-
-
 }
