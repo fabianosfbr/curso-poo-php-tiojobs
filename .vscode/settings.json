@@ -52,6 +52,7 @@
     "yaml.schemas": {},
     "yaml.customTags": [],
     "blade.format.enable": true,
+    "docker-linter.php.enable": false,
     "auto-close-tag.activationOnLanguage": [
         "xml",
         "php",
