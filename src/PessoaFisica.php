@@ -7,8 +7,6 @@ namespace fabianosfbr\CursoPooPhp;
 class PessoaFisica extends  Pessoa
 {
 
-    const OBJETCT_TYPE = "Ser humano";
-
     private int $age;
     private string $cpf;
 
@@ -27,7 +25,10 @@ class PessoaFisica extends  Pessoa
         $this->cpf = $cpf;
     }
 
-
+    public function getDocument():string
+    {
+        return $this->cpf;
+    }
 
 
 

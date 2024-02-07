@@ -30,11 +30,13 @@ $pj = new PessoaJurica(
 
 //dump($pf);
 
-if($pf instanceof PessoaFisica) {
-    dump("Sim, sou pessoa física");
-}
+//if($pf instanceof PessoaFisica) {
+//    dump("Sim, sou pessoa física");
+//}
+//
+//if($pj instanceof PessoaJurica) {
+//    dump("Sim, sou pessoa jurídica");
+//}
 
-if($pj instanceof PessoaJurica) {
-    dump("Sim, sou pessoa jurídica");
-}
-
+dump($pf->getDocument());
+dump($pj->getDocument());

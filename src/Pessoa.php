@@ -13,18 +13,20 @@ abstract class Pessoa
 
     protected string $phone;
 
+    abstract function getDocument(): string;
+
 
     public function getName(): string
     {
         return $this->name;
     }
 
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    public function getPhone()
+    public function getPhone(): string
     {
         return $this->phone;
     }

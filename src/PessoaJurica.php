@@ -20,4 +20,9 @@ class PessoaJurica extends  Pessoa
         $this->phone = $phone;
         $this->cnpj = $cnpj;
     }
+
+    public function getDocument(): string
+    {
+        return $this->cnpj;
+    }
 }
