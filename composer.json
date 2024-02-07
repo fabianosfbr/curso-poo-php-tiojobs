@@ -1,0 +1,19 @@
+{
+    "name": "fabianosfbr/curso-oo-php",
+    "description": "Curso Orientação a Objetos utilizando PHP",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "fabianosfbr\\CursoPooPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fabiano Fernandes",
+            "email": "contato@fabianofernandes.adm.br"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^6.4"
+    }
+}
