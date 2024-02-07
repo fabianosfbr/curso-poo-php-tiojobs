@@ -23,6 +23,8 @@ $pj = new PessoaJurica(
 );
 
 
-dump($pj->showName());
+dump($pj->getName());
+dump($pj->getEmail());
+dump($pj->getEmail());
 
 dump($pessoaFisica);
